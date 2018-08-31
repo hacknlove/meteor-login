@@ -1,0 +1,33 @@
+<template name="login">
+  <div class="contenedorDelLogin">
+    <form class="login" novalidate>
+      <h1>{{titulo}}</h1>
+      <h2>{{subtitulo}}</h2>
+      <input type="email" name="email" novalidate placeholder="{{_ 'dirección de correo'}}" data-validacion="email vacio">
+      <div class="errores">
+        <p class="noEncontrado">
+          {{_ 'Usuario no encontrado.'}}
+        </p>
+        <p class="noValido">
+          {{_ 'Compruebe que ha escrito una dirección de correo válida.'}}
+        </p>
+        <p class="vacio">
+          {{_ 'Introduzca una direcciónd de correo.'}}
+        </p>
+      </div>
+      <input type="password" name="password" placeholder="{{_ 'contraseña'}}" data-validacion="vacio">
+      <div class="errores">
+        <p class="noEncontrado">
+          {{_ 'El usuario aún no ha establecido una contraseña.'}}
+        </p>
+        <p class="noValido">
+          {{_ 'Contraseña erronea.'}}
+        </p>
+        <p class="vacio">
+          {{_ 'Introduzca una contraseña.'}}
+        </p>
+      </div>
+      <button>{{_ 'entrar'}}</button>
+    </form>
+  </div>
+</template>

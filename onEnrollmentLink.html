@@ -1,0 +1,21 @@
+<template name="onEnrollmentLink">
+  <div class="contenedorDelLogin">
+    <form class="login" novalidate>
+      <h1>{{titulo}}</h1>
+      <h2>{{_ 'crear contraseña'}}</h2>
+      <input type="password" name="password" placeholder="{{_ 'contraseña'}}" data-validacion="vacio">
+      <div class="errores">
+        <p class="vacio">
+          {{_ 'Introduzca una contraseña.'}}
+        </p>
+      </div>
+      <input type="password" name="password2" placeholder="{{_ 'repita su contraseña'}}" data-validacion="vacio">
+      <div class="errores">
+        <p class="vacio">
+          {{_ 'Repita la contraseña.'}}
+        </p>
+      </div>
+      <button>{{_ 'crear contraseña'}}</button>
+    </form>
+  </div>
+</template>

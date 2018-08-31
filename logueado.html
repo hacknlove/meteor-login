@@ -1,0 +1,26 @@
+<template name="logueado">
+  {{template}}
+  {{#if template}}
+    {{> Template.elseBlock}}
+    {{> Template.dynamic template=template data=this}}
+  {{else}}
+    {{> Template.contentBlock}}
+  {{/if}}
+</template>
+
+<template name="sinConexion">
+  <div class="contenedorDelLogin">
+    <form class="login" novalidate>
+      <h1>{{titulo}}</h1>
+      <h2>{{_ 'sin conexión'}}</h2>
+    </form>
+  </div>
+</template>
+<template name="logginIn">
+  <div class="contenedorDelLogin">
+    <form class="login" novalidate>
+      <h1>{{titulo}}</h1>
+      <h2>{{_ 'Entrando'}}</h2>
+    </form>
+  </div>
+</template>
