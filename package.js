@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'hacknlove:login',
-  version: '0.0.6',
+  version: '0.0.9',
   summary: 'Para no repetir el mismo código cada vez que hago una webapp',
   // URL to the Git repository containing the source code for this package.
   git: 'git@hacknlove.github.com:hacknlove/meteor-login.git',
@@ -12,9 +12,9 @@ Package.describe({
 })
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.7.0.5')
+  api.versionsFrom('1.4')
   api.use('ecmascript')
-  api.use('templating@1.0.0', 'client')
+  api.use('templating', 'client')
   api.use('less', 'client')
   api.use('accounts-password')
   api.use('hacknlove:traduccion@0.0.1')
