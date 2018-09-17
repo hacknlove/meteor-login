@@ -14,10 +14,10 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('1.7.0.5')
   api.use('ecmascript')
-  api.use('templating', 'client')
+  api.use('templating@1.0.0', 'client')
   api.use('less', 'client')
   api.use('accounts-password')
-  api.use('ocs:traduccion')
+  api.use('hacknlove:traduccion@0.0.1')
   api.addFiles('login.less', 'client')
   api.addFiles('logueado.html', 'client')
   api.addFiles('login.html', 'client')
