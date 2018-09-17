@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'hacknlove:login',
-  version: '0.0.4',
+  version: '0.0.5',
   summary: 'Para no repetir el mismo código cada vez que hago una webapp',
   // URL to the Git repository containing the source code for this package.
   git: 'git@hacknlove.github.com:hacknlove/meteor-login.git',
