@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'hacknlove:login',
-  version: '0.0.5',
+  version: '0.0.6',
   summary: 'Para no repetir el mismo código cada vez que hago una webapp',
   // URL to the Git repository containing the source code for this package.
   git: 'git@hacknlove.github.com:hacknlove/meteor-login.git',
@@ -18,10 +18,11 @@ Package.onUse(function (api) {
   api.use('less', 'client')
   api.use('accounts-password')
   api.use('hacknlove:traduccion@0.0.1')
-  api.addFiles('login.less', 'client')
-  api.addFiles('logueado.html', 'client')
-  api.addFiles('login.html', 'client')
-  api.addFiles('onEnrollmentLink.html', 'client')
-  api.addFiles('logueado.js', 'client')
-  api.addFiles('onEnrollmentLink.js', 'client')
+  api.addFiles([
+    'login.less',
+    'logueado.html',
+    'login.html',
+    'onEnrollmentLink.html',
+    'logueado.js',
+    'onEnrollmentLink.js'], 'client')
 })

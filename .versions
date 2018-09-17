@@ -25,7 +25,7 @@ ecmascript-runtime-server@0.7.1
 ejson@1.1.0
 email@1.2.3
 geojson-utils@1.0.10
-hacknlove:login@0.0.4
+hacknlove:login@0.0.5
 hacknlove:traduccion@0.0.1
 htmljs@1.0.11
 http@1.4.1
